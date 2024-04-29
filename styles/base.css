@@ -1,5 +1,6 @@
 body{
     font-size: 15px;
+    color:#000080;
 }
 main{
     width: 98%;
@@ -9,29 +10,39 @@ main{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
     background-color: white;
     margin-bottom: 0;
-    background-color: rgb(185, 11, 11);
+}
+.card{
+    background-color: #f0f0f0;
+    border: 1px #FF8C00 solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+h2{
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #FF8C00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 #card1{
     grid-column: 1 / 3;
-    background-color: rgb(185, 11, 11);
 }
 nav{
     display: flex; /* Set container to use flexbox */
     justify-content: space-between; /* Align items with space between them */
     align-items: center; /* Center items vertically */
     height: 30px; /* Just for demonstration */
-    background-color: black;
+    background-color: #F5F5DC;
     padding: 20px;
 }
 a{
     text-decoration: none;
-    color: #f0f0f0;
+    color: #FF8C00;
 }
 header, footer{
-    background-color: rgb(32, 31, 31);
+    background-color: #FF8C00;
     
 }
 footer{
@@ -47,6 +58,23 @@ header h1{
     padding: 15px;
     text-align: center;
 }
-section h2{
-    color: #000;
+section h2{ 
+    color:#000080;;
+}
+.container2 {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+}
+
+.container2 img {
+    width: 200px; /* Adjust the width of the image as needed */
+    height: 200px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between image and text */
+}
+
+.container2 .text {
+    font-size: 30px; /* Adjust font size as needed */
+}
+hr{
+    width: 90%;
 }
