@@ -1,6 +1,8 @@
 body{
     font-size: 17px;;
     color:#000080;
+    font-family: "Teachers", sans-serif;
+    
 }
 main{
     width: 99%;
@@ -33,8 +35,7 @@ nav{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    height: 30px;
-    background-color: #F5F5DC;
+    background-color: #020220;
     padding: 20px;
 }
 a{
@@ -55,15 +56,17 @@ footer p{
 }
 header h1{
     color: #f0f0f0;
-    padding: 15px;
     text-align: center;
+    font-family: "Sedan SC", serif;
 }
 section h2{ 
-    color:#000080;;
+    color:#ffffff;
+    font-family: "Sedan SC", serif;
 }
 .container2 {
     display: flex; 
     align-items: center; 
+    padding: 10px;
 }
 
 .container2 img {
@@ -73,7 +76,7 @@ section h2{
 }
 
 .container2 .text {
-    font-size: 30px; 
+    font-size: 28px; 
 }
 hr{
     width: 90%;
