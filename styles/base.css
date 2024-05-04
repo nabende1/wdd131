@@ -17,14 +17,14 @@ main{
 }
 .card{
     background-color: #f0f0f0;
-    border: 1px #FF8C00 solid;
+    border: 1px #000080 solid;
     border-radius: 10px;
     margin: 5px;
 }
 h2{
     margin-top: 0px;
     padding-top: 0px;
-    background-color: #FF8C00;
+    background-color: #000080;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -40,7 +40,7 @@ nav{
 }
 a{
     text-decoration: none;
-    color: #FF8C00;
+    color: #000080;
 }
 nav a {
     text-decoration: none;
@@ -53,7 +53,7 @@ nav a {
   }
 
 header, footer{
-    background-color: #FF8C00;
+    background-color: #000080;
     
 }
 footer{
