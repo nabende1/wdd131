@@ -24,6 +24,7 @@ main{
 h2{
     margin-top: 0px;
     padding: 20px;
+    text-align: center;
     background-color: #000080;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -86,7 +87,9 @@ section h2{
     height: auto; 
     margin-right: 10px; 
 }
-
+figure{
+    text-align: center;
+}
 .container2 .text {
     font-size: 28px; 
 }
