@@ -23,7 +23,7 @@ main{
 }
 h2{
     margin-top: 0px;
-    padding-top: 0px;
+    padding: 20px;
     background-color: #000080;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -36,7 +36,6 @@ nav{
     justify-content: space-between; 
     align-items: center; 
     background-color: #020220;
-    padding: 20px;
 }
 a{
     text-decoration: none;
@@ -45,8 +44,11 @@ a{
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    display: block;
+    font-size: 20px;
+    height: 50px;
+    padding: 30px;
+    padding-bottom: 0px;
+   
   }
   a:hover {
     background-color: #555;
@@ -81,7 +83,7 @@ section h2{
 
 .container2 img {
     width: 200px; 
-    height: 200px; 
+    height: auto; 
     margin-right: 10px; 
 }
 
