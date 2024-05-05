@@ -13,8 +13,8 @@
 		display: none;
 	}
     .image{
-        height: 200px;
         width: 400px;
+        height: auto;
       }
     .container {
         display: grid;

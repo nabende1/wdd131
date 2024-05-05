@@ -84,7 +84,7 @@ nav {
   }
   .image{
     height: 200px;
-    width: 400px;
+    width: auto;
   }
   .container {
     grid-template-columns: 1fr;
