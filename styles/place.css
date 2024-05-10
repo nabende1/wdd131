@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #f7e706; /* Primary color */
+    --font-family: 'Roboto', sans-serif; /* Font family */
+    --weather-icon-size: 8rem; /* Weather icon size */
+  }
+  
+body {
+    font-family: var(--font-family);
+  }
 header{
     background-color: black;
     color: yellow;
@@ -42,7 +51,7 @@ h2{
     padding-bottom: 1rem;
 }
 .icon{
-    width: 8rem;
+    width: var(--weather-icon-size);
     height: auto;
 }
 
