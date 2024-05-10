@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="Country Page for Uganda.">
+    <meta name="author" content="Brian Nabende">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="title">Uganda</div>
+
+    </header>
+    <div id="line"></div>
+    <main>
+        <img srcset="images/crane-mobile.webp 480w,
+             images/crane-mobile.webp 768w,
+             images/crane-desktop.webp 1024w" sizes="(max-width: 480px) 480px,
+            (max-width: 768px) 768px,
+            1024px" src="crane-desktop.webp" alt="Responsive Landing Image">
+        <section id="data">
+            <div class="heading">
+            <h2>Data</h2>
+            </div>
+            <div class="info">
+            <p><span class="bold">Population:</span> 47,250,000</p>
+            <p><span class="bold">Capital:</span> Kampala</p>
+            <p><span class="bold">languages:</span> Kiswahili,Luganda,English</p>
+            <p><span class="bold">Currency:</span> Ugandan Shillings(UGX)</p>
+            <p><span class="bold">Time Zone:</span> GMT+3</p>
+            <p><span class="bold">Calling Code:</span> +256</p>
+            <p><span class="bold">Internet TLD:</span> .ug</p>
+            </div>
+        </section>
+        <section id="weather">
+            <div class="heading">
+            <h2>Weather</h2>
+            <img class="icon" src="images/weather.svg" alt="weather icon">
+            </div>
+            <div class="info">
+            <p><span class="bold">Temperature:</span><span id="temperature">21°C</span></p>
+            <p><span class="bold">Conditions:</span> Mostly cloudy</p>
+            <p><span class="bold">Wind:</span><span id="windSpeed">8 km/h</span></p>
+            <p><span class="bold">WindChill:</span><span id="windchill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Brian Nabende, Kampala Uganda.</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

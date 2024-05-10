@@ -1,0 +1,114 @@
+header{
+    background-color: black;
+    color: yellow;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#title{
+    font-size: 30px;
+    font-weight:900;
+}
+#line{
+    width: 100%;
+    height: 1rem;
+    background-color: red;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+
+  section {
+    padding: 20px;
+    border: 1px solid #f0ede9;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+  }
+section .bold{
+    font-weight: bold;
+}
+h2{
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+.icon{
+    width: 8rem;
+    height: auto;
+}
+
+footer{
+    background-color: black;
+    border-radius: 2px;
+}
+footer{
+    padding: 5px;
+}
+footer p{
+    text-align: center;
+    color: #f0f0f0;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    img {
+      grid-column: 1/5;
+      grid-row: 1/6;
+      width: 100%;
+    }
+    #data{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 20px;
+    }
+    #weather{
+        grid-column: 4/5;
+        grid-row: 4/5;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 10px;
+    }
+    .icon{
+        width: 2rem;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 1p;
+    }
+    h2{
+        margin: 0;
+        padding: 10px;
+    }
+    section{
+        position: relative;
+        width: 300px; /* Adjust width as needed */
+        height: auto; /* Adjust height as needed */
+        padding: 20px; /* Add padding for visual clarity */
+    }
+    .heading {
+        display: flex;
+        position: absolute;
+        top: 10px; /* Adjust the amount you want the child div to hang outside */
+        left: 30%; /* Position it in the center */
+        transform: translateX(-50%); /* Center it horizontally */
+        width: 200px; /* Adjust width as needed */
+        height: 40px; /* Adjust height as needed */
+        background-color: aqua;
+        border: 1px solid #ccc; /* Border for visual clarity */
+      }
+      .info{
+        margin-top: 3rem;
+      }
+}
