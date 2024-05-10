@@ -120,4 +120,14 @@ footer p{
       .info{
         margin-top: 3rem;
       }
+      #weather h2::after {
+        content: ''; /* Add pseudo-element */
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-color);
+      }
 }
