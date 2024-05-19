@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #000080;
+	color: white;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: #000080;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+h1{
+    color: white;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: inline-block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li a i {
+    margin-right: 5px;
+  }
+  .image{
+    height: 200px;
+    width: auto;
+  }
+  .container {
+    grid-template-columns: 1fr;
+}
+h2 {
+    grid-column: 1 / -1; /* Spans all columns */
+    text-align: center; /* Centered */
+}
+header, footer{
+    background-color: #000080;
+    
+}
+footer{
+    height: 50px;
+}
+footer p{
+    text-align: center;
+    color: #f0f0f0;
+    margin: 5px;
+    padding-top: 2px;
+}
+.container {
+  padding: 20px;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.temple-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: #fff; /* Ensure background color for shadow effect */
+}
+
+.temple-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for screens smaller than 310px */
+@media screen and (max-width: 605px) {
+    nav {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    nav ul {
+      margin-top: 10px; /* Add some space between the heading and links */
+    }
+  
+    nav ul li {
+      margin-right: 0; /* Remove margin */
+      margin-bottom: 5px; /* Add margin between links */
+    }
+    figure{
+      margin: 20px;
+    }
+  }
