@@ -1,0 +1,227 @@
+/* Mobile View Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  header nav {
+    background-color: #444;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  .featured-events {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured-events h2 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .featured-events .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .featured-events .slider .slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .featured-events .slider .slide img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .upcoming-events {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upcoming-events h2 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .upcoming-events ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .upcoming-events li {
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .upcoming-events li:last-child {
+    border-bottom: none;
+  }
+  
+  .submit-event {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-event h2 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .submit-event button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  footer .contact-info {
+    margin-bottom: 0.5em;
+  }
+  
+  footer .social-media {
+    margin-top: 0.5em;
+  }
+  
+  footer .social-media a {
+    margin-right: 10px;
+  }
+/* Desktop View Styles */
+@media only screen and (min-width: 768px) {
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 2em;
+      text-align: center;
+    }
+  
+    header .logo {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  
+    header nav {
+      background-color: #444;
+      padding: 2em;
+      text-align: center;
+    }
+  
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    header nav li {
+      display: inline-block;
+      margin-right: 40px;
+    }
+  
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 4em;
+    }
+  
+    .featured-events {
+      width: 70%;
+      background-color: #fff;
+      padding: 2em;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .upcoming-events {
+      width: 30%;
+      background-color: #fff;
+      padding: 2em;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .submit-event {
+      width: 100%;
+      background-color: #fff;
+      padding: 2em;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    aside {
+      width: 30%;
+      padding: 2em;
+    }
+  
+    .quick-links {
+      background-color: #fff;
+      padding: 1em;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .upcoming-event-highlights {
+      background-color: #fff;
+      padding: 1em;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+    
