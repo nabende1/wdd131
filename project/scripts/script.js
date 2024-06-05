@@ -57,11 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Event List
 document.addEventListener("DOMContentLoaded", function () {
-    // Define an array of event objects
-    var events = [
+    const events = [
         {
-            imgSrc: "images/event1.webp",
-            altText: "Event 1",
             title: "Event 1",
             date: "June 1, 2024",
             time: "10:00 AM",
@@ -69,8 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "This is a brief description of Event 1."
         },
         {
-            imgSrc: "images/event2.webp",
-            altText: "Event 2",
             title: "Event 2",
             date: "June 2, 2024",
             time: "11:00 AM",
@@ -78,8 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "This is a brief description of Event 2."
         },
         {
-            imgSrc: "images/event3.webp",
-            altText: "Event 3",
             title: "Event 3",
             date: "June 3, 2024",
             time: "12:00 PM",
@@ -88,48 +81,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    // Get the event-listings section
-    var eventListings = document.getElementById("event-listings");
+    const eventListings = document.getElementById("event-listings");
 
-    // Iterate over the events array and create HTML for each event
     events.forEach(function (event) {
-        var eventDiv = document.createElement("div");
+        const eventDiv = document.createElement("div");
         eventDiv.classList.add("event");
 
-        var img = document.createElement("img");
-        img.src = event.imgSrc;
-        img.alt = event.altText;
-
-        var eventInfoDiv = document.createElement("div");
+        // Create .event-info dynamically
+        const eventInfoDiv = document.createElement("div");
         eventInfoDiv.classList.add("event-info");
+        eventInfoDiv.innerHTML = `
+            <h3>${event.title}</h3>
+            <p>Date: ${event.date}</p>
+            <p>Time: ${event.time}</p>
+            <p>Venue: ${event.venue}</p>
+            <p>Description: ${event.description}</p>
+        `;
 
-        var title = document.createElement("h3");
-        title.textContent = event.title;
-
-        var date = document.createElement("p");
-        date.textContent = "Date: " + event.date;
-
-        var time = document.createElement("p");
-        time.textContent = "Time: " + event.time;
-
-        var venue = document.createElement("p");
-        venue.textContent = "VENUE: " + event.venue;
-
-        var description = document.createElement("p");
-        description.textContent = "Description: " + event.description;
-
-        eventInfoDiv.appendChild(title);
-        eventInfoDiv.appendChild(date);
-        eventInfoDiv.appendChild(time);
-        eventInfoDiv.appendChild(venue);
-        eventInfoDiv.appendChild(description);
-
-        eventDiv.appendChild(img);
         eventDiv.appendChild(eventInfoDiv);
-
         eventListings.appendChild(eventDiv);
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Get current year
