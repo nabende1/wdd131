@@ -1,54 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const events = [
-        {
-            title: "Event 1",
-            details: "Details about event 1.",
-            image: "images/event1.jpg",
-            alt: "Event 1"
-        },
-        {
-            title: "Event 2",
-            details: "Details about event 2.",
-            image: "images/event2.jpg",
-            alt: "Event 2"
-        },
-        {
-            title: "Event 3",
-            details: "Details about event 3.",
-            image: "images/event3.jpg",
-            alt: "Event 3"
-        }
-    ];
-
     const slider = document.getElementById('slider');
     const pagination = document.querySelector('.pagination');
     let currentIndex = 0;
     let slideInterval;
-
-    function createSlides() {
-        events.forEach((event, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            if (index === 0) slide.classList.add('active');
-
-            slide.innerHTML = `
-                <img src="${event.image}" alt="${event.alt}">
-                <div class="event-details">
-                    <h3>${event.title}</h3>
-                    <p>${event.details}</p>
-                </div>
-            `;
-            slider.appendChild(slide);
-
-            const dot = document.createElement('div');
-            if (index === 0) dot.classList.add('active');
-            dot.addEventListener('click', function() {
-                currentIndex = index;
-                showSlide(currentIndex);
-            });
-            pagination.appendChild(dot);
-        });
-    }
 
     function updatePagination() {
         pagination.querySelectorAll('div').forEach((dot, i) => {
@@ -71,20 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('next').addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % events.length;
+        currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
         resetInterval();
     });
 
     document.getElementById('prev').addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + events.length) % events.length;
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(currentIndex);
         resetInterval();
     });
 
     function autoSlide() {
         slideInterval = setInterval(function() {
-            currentIndex = (currentIndex + 1) % events.length;
+            currentIndex = (currentIndex + 1) % slides.length;
             showSlide(currentIndex);
         }, 5000); // Change slide every 5 seconds
     }
@@ -94,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
         autoSlide();
     }
 
-    createSlides();
+    // Initially show the first slide
+    const slides = document.querySelectorAll('.slide');
     showSlide(currentIndex);
     autoSlide();
 });
