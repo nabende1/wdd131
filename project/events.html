@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kampala Community Events Portal</title>
-    <link rel="stylesheet" href="styles/project.css" >
-    <link rel="preconnect" href="https://github.com">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body class="events-page"> 
     <header>
         <div class="logo">
+            <!-- Lazy loading for images -->
             <img src="images/logo.webp" alt="Logo" loading="lazy">
+            <!-- Preconnect to GitHub -->
+            <link rel="preconnect" href="https://github.com">
             <h1>Kampala Community Events Portal</h1>
         </div>
         <nav>
