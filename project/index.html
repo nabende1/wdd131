@@ -9,38 +9,49 @@
     </head>
 <body>
     <header>
+        
         <div class="logo">
-    <!-- Your existing HTML content -->
-    <!-- Lazy loading for images -->
-    <img src="images/logo.webp" alt="Logo" width="50" height="50" loading="lazy">
-
-    <!-- Preconnect to GitHub -->
-    <link rel="preconnect" href="https://github.com">
-            <h1>Kampala Community Events Portal</h1>
+        <!-- Your existing HTML content -->
+        <!-- Lazy loading for images -->
+        <img src="images/logo.webp" alt="Logo" width="50" height="50" loading="lazy">
+        <!-- Preconnect to GitHub -->
+        <link rel="preconnect" href="https://github.com">
+                <h1>Kampala Community Events Portal</h1>
         </div>
         <nav>
-            <ul>
+            <a id="menu" href="#"></a>
+			<ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="submit.html">Submit Event</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="event-grid">
         <section id="featured-events">
             <h2>Featured Events</h2>
             <div class="slider" id="slider">
                 <!-- Slide 1 -->
-                <div class="slide active">
-                    <img src="images/event1.webp" alt="Event 1">
+                <div class="slide">
+                    <img srcset="images/event1-mobile2.webp 480w,
+                    images/event1-mobile1.webp 768w,
+                    images/event1.webp 1024w" sizes="(max-width: 480px) 480px,
+                   (max-width: 768px) 768px,
+                   1024px" src="images/event1.webp" alt="Responsive Landing Image">
+                
                     <div class="event-details">
                         <h3>Event 1</h3>
                         <p>Details about event 1.</p>
                     </div>
                 </div>
                 <!-- Slide 2 -->
-                <div class="slide">
-                    <img src="images/event2.webp" alt="Event 2">
+                <div class="slide active">
+                    <img srcset="images/event2-mobile2.webp 480w,
+                    images/event2-mobile1.webp 768w,
+                    images/event2.webp 1024w" sizes="(max-width: 480px) 480px,
+                   (max-width: 768px) 768px,
+                   1024px" src="images/event2.webp" alt="Responsive Landing Image">
+
                     <div class="event-details">
                         <h3>Event 2</h3>
                         <p>Details about event 2.</p>
@@ -48,7 +59,12 @@
                 </div>
                 <!-- Slide 3 -->
                 <div class="slide">
-                    <img src="images/event3.webp" alt="Event 3">
+                    <img srcset="images/event3-mobile2.webp 480w,
+                    images/event3-mobile1.webp 768w,
+                    images/event3.webp 1024w" sizes="(max-width: 480px) 480px,
+                   (max-width: 768px) 768px,
+                   1024px" src="images/event3.webp" alt="Responsive Landing Image">
+
                     <div class="event-details">
                         <h3>Event 3</h3>
                         <p>Details about event 3.</p>
@@ -60,18 +76,15 @@
             <div class="pagination"></div>
         </section>
         
-        <section id="event-listings">
+        <section id="event-listings" class="event-grid">
             <h2>Upcoming Events</h2>
             <div class="event">
-                <img src="images/event1.webp" alt="Event 1">
                 <!-- .event-info will be added dynamically -->
             </div>
             <div class="event">
-                <img src="images/event2.webp" alt="Event 1">
                 <!-- .event-info will be added dynamically -->
             </div>
             <div class="event">
-                <img src="images/event3.webp" alt="Event 1">
                 <!-- .event-info will be added dynamically -->
             </div>
         </section>
