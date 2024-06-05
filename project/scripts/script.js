@@ -205,44 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// JavaScript for handling form submission
-document.getElementById("event-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    var formData = new FormData(this);
-
-    // Create an object to hold event details
-    var eventObj = {};
-    formData.forEach(function (value, key) {
-        eventObj[key] = value;
-    });
-
-    // Convert image file to base64 string
-    var reader = new FileReader();
-    reader.onload = function () {
-        eventObj["imageBase64"] = reader.result;
-
-        // Pass event object to a function to handle adding the event
-        addEvent(eventObj);
-    };
-    reader.readAsDataURL(formData.get("event-image"));
-});
-
-// Function to handle adding the event
-function addEvent(event) {
-    // Retrieve existing events from local storage or create an empty array
-    var events = JSON.parse(localStorage.getItem("events")) || [];
-
-    // Add the new event to the events array
-    events.push(event);
-
-    // Store the updated events array back to local storage
-    localStorage.setItem("events", JSON.stringify(events));
-
-    // Redirect to the events page after submitting the event
-    window.location.href = "events.html";
-}
-
 // JavaScript for dynamically injecting events
 document.addEventListener("DOMContentLoaded", function () {
     // Get existing events from local storage or use an empty array if none exists
